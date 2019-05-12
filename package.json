@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/RaySaii/specific/issues"
   },
-  "homepage": "https://github.com/RaySaii/specific#readme"
+  "homepage": "https://github.com/RaySaii/specific#readme",
+  "dependencies": {
+    "xmldom": "^0.1.27"
+  }
 }
