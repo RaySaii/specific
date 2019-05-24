@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/RaySaii/specific/issues"
   },
+  "files": ["dist"],
   "homepage": "https://github.com/RaySaii/specific#readme",
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
