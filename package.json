@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/RaySaii/specific#readme",
   "dependencies": {
+    "react-hammerjs": "^1.0.1",
     "xmldom": "^0.1.27"
   }
 }
