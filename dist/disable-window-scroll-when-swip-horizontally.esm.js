@@ -14,7 +14,7 @@ function preventTouch(e) {
   clientX = e.touches[0].clientX - firstClientX;
   clientY = e.touches[0].clientY - firstClientY; // Vertical scrolling does not work when you start swiping horizontally.
 
-  if (Math.abs(this.clientX) > minValue) {
+  if (Math.abs(clientX) > minValue) {
     e.preventDefault();
     e.returnValue = false;
     return false;
@@ -28,8 +28,8 @@ function disabledScroll() {
   });
 }
 function removeDisabled() {
-  window.removeEventListener('touchstart', this.touchStart);
-  window.removeEventListener('touchmove', this.preventTouch, {
+  window.removeEventListener('touchstart', touchStart);
+  window.removeEventListener('touchmove', preventTouch, {
     passive: false
   });
 }
