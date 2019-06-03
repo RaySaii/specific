@@ -22,14 +22,18 @@ function preventTouch(e) {
 }
 
 function disabledScroll() {
-  window.addEventListener('touchstart', touchStart);
-  window.addEventListener('touchmove', preventTouch, {
+  var ele = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : window;
+  if (!ele) return;
+  ele.addEventListener('touchstart', touchStart);
+  ele.addEventListener('touchmove', preventTouch, {
     passive: false
   });
 }
 function removeDisabled() {
-  window.removeEventListener('touchstart', touchStart);
-  window.removeEventListener('touchmove', preventTouch, {
+  var ele = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : window;
+  if (!ele) return;
+  ele.removeEventListener('touchstart', touchStart);
+  ele.removeEventListener('touchmove', preventTouch, {
     passive: false
   });
 }
